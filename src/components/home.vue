@@ -64,7 +64,8 @@
                 </div>
             </swiper-slide>
             <swiper-slide class="end-page">
-                <div>join us</div>
+                <div class="join">join us</div>
+                <div class="contact">地点：逸夫楼308</div>
                 <div class="back-to-top" @click="backTop">返回顶部</div>
             </swiper-slide >
             <div class="swiper-pagination1" slot="pagination"></div>
@@ -118,7 +119,7 @@
                     },
                 },
                 swiperOption2: {
-                    slidesPerView: 1,
+                    slidesPerView: 2,
                     spaceBetween: 10,
                     freeMode: true,
                     pagination: {
@@ -141,9 +142,8 @@
         background-size 100% 100%
     .product-page
         background gray
-    .team-page
-        background gray
-    .team-wrapper
+
+    .product-wrapper
         border solid 1px white
         top 40%
         height 40%
@@ -152,11 +152,32 @@
             top 50px
             border solid white
 
+    .team-page
+        background darkgrey
+    .team-wrapper
+        border solid 1px white
+        top 40%
+        height 40%
+        .swiper-slide
+            height 50%
+            top 50px
+            border solid white
+    .end-page
+        .join
+            vertical-align center
+            text-align center
+            height 200px
+            width 100%
+        .contact
+            background darkgray
+            height 200px
+            width 100%
+            text-align center
     .back-to-top
         padding-top 40%
         height 100px
         text-align center
-        background darkgray
+        background gray
         color white
     .test
         position absolute
